@@ -1,7 +1,7 @@
 <table>
   <tr *ngFor="let p of pianeti">
-    <td>{{ p.nome }}</td>
-    <td>{{ p.descrizione }}</td>
-    <td><img [src]="p.immagine" width="200px" /></td>
+    <tr>{{ p.nome }}</tr>
+    <tr>{{ p.descrizione }}</tr>
+    <tr><img [src]="p.immagine" width="200px" /></tr>
   </tr>
 </table>
