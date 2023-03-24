@@ -1,7 +1,16 @@
 <table>
+  <tr>
+    <th>Pianeta</th>
+    <th>Descrizione</th>
+    <th>Immagine</th>
+    <th></th>
+  </tr>
   <tr *ngFor="let p of pianeti">
-    <tr>{{ p.nome }}</tr>
-    <tr>{{ p.descrizione }}</tr>
-    <tr><img [src]="p.immagine" width="200px" /></tr>
+    <td>{{ p.nome }}</td>
+    <td>{{ p.descrizione }}</td>
+    <td><img [src]="p.immagine" width="200px" /></td>
+    <td>
+      <button (notifica)="onImmagineClick($event)">Per saperne di più</button>
+    </td>
   </tr>
 </table>

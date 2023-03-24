@@ -19,3 +19,8 @@ export const PIANETI: IPianeta[] = [
       'https://media-manager.starsinsider.com/1920/na_5a57989766d03.jpg',
   },
 ];
+
+dalFiglio: string = '';
+onImmagineClick(valore: string): void {
+    this.dalFiglio = valore;
+  }
